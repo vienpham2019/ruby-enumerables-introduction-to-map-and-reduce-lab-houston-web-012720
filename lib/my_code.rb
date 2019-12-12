@@ -24,6 +24,7 @@ def reduce_to_all_true(source_array)
 end
 
 def reduce_to_any_true(source_array)
-  source_array.map {|element| return true if !! element == true}
+  source_array.map {|element| return true if !! element == true; return faslse if !!element == faslse || element = nil
+  }
 end
 
