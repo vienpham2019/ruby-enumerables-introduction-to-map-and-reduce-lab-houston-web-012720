@@ -20,7 +20,7 @@ def reduce_to_total(source_array,starting_point = 0)
 end
 
 def reduce_to_all_true(source_array)
-  source_array.reduce {|element| if element == false; return false; else return true end}
+  source_array.reduce {|element| if element == false || element == nil; return false; else return true end}
 end
 
 def reduce_to_any_true(source_array)
