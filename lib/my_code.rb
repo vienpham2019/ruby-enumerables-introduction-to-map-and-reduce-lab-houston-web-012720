@@ -21,7 +21,7 @@ end
 
 def reduce_to_all_true(source_array)
   source_array.reduce do |element|
-    contiue if element = true
+    continue if element = true
     break if element = false
 end
 
